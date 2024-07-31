@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #141415; /* Match Home.css background */
+  }
+  
+  .h2-title {
+    margin-top: 50px;
+    margin-bottom: 7px;
+    font-size: 2rem;
+    color: #516fe6;
+    border-bottom: 3px solid #516fe6;
+    display: inline-block;
+    padding-bottom: 5px;
+  }
+  .project-description {
+    color: white;
+    font-size: 1.17rem;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  .project-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px; /* Reduced space between divisions */
+    padding: 20px;
+    margin-top: 90px; /* Margin top for spacing above the section */
+  }
+  
+  .project-card {
+    position: relative;
+    flex: 1;
+    min-width: 300px; /* Ensure the cards are larger */
+    max-width: 400px; /* Adjust as needed for larger size */
+    margin: 0 40px; /* Add margin right and left */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .project-image {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .project-image img {
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+    display: block;
+    transition: opacity 0.3s;
+  }
+  
+  .project-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    text-align: center;
+    padding: 15px; /* Increased padding for better visibility */
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 1.5rem; /* Larger font size for better readability */
+  }
+  
+  .project-card:hover .project-title {
+    opacity: 1;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
